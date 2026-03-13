@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kiruthik Kumar - AI Systems Engineer Portfolio
+
+A minimalistic, modern, and research-lab inspired portfolio website built for AI engineers.
+
+## Tech Stack
+
+- **Frontend:** Next.js 15 (App Router)
+- **Styling:** Tailwind CSS 4 (CSS-first configuration)
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Data:** TypeScript + GitHub REST API
+
+## Features
+
+- **Apple-like Aesthetics:** Clean UI, large typography, and heavy focus on whitespace.
+- **Research-Lab Feel:** Dark theme (#0D0D0D) with subtle technical accents.
+- **AI Agent Showcase:** Dedicated section for autonomous systems and architecture diagrams.
+- **Dynamic Open Source:** Fetches top repositories directly from GitHub.
+- **Fully Responsive:** Optimized for Mobile, Tablet, and Desktop.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js 18.17 or later
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <your-repo-url>
+   cd kiruthikPortflio
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customizing Data
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Most of the content is managed via TypeScript files for ease of maintenance:
 
-## Learn More
+- **Projects & Agents:** Edit `src/data/projects.ts`.
+- **Animations:** Adjust variants in `src/lib/animations.ts`.
+- **Styles/Colors:** Modify `@theme` variables in `src/app/globals.css`.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment (Vercel)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push your code to a GitHub repository.
+2. Import the project into Vercel.
+3. Vercel will automatically detect Next.js and deploy your site.
 
-## Deploy on Vercel
+*Note: For the GitHub API, you can optionally add a `GITHUB_TOKEN` environment variable in Vercel if you encounter rate limiting.*
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
